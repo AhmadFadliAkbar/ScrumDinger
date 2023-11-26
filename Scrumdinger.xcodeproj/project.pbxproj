@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92AA2D32B1388590098F953 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AA2D22B1388590098F953 /* Theme.swift */; };
+		A92AA2D52B13894E0098F953 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AA2D42B13894E0098F953 /* DailyScrum.swift */; };
 		A94F50702B0E643D004AF181 /* dingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F506F2B0E643D004AF181 /* dingerApp.swift */; };
 		A94F50722B0E643D004AF181 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F50712B0E643D004AF181 /* MeetingView.swift */; };
 		A94F50742B0E643E004AF181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94F50732B0E643E004AF181 /* Assets.xcassets */; };
@@ -34,14 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A94F506C2B0E643D004AF181 /* dinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92AA2D22B1388590098F953 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A92AA2D42B13894E0098F953 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		A94F506C2B0E643D004AF181 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F506F2B0E643D004AF181 /* dingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dingerApp.swift; sourceTree = "<group>"; };
 		A94F50712B0E643D004AF181 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		A94F50732B0E643E004AF181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94F50762B0E643E004AF181 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A94F507C2B0E643F004AF181 /* dingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F507C2B0E643F004AF181 /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F50802B0E643F004AF181 /* dingerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dingerTests.swift; sourceTree = "<group>"; };
-		A94F50862B0E643F004AF181 /* dingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F50862B0E643F004AF181 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F508A2B0E643F004AF181 /* dingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dingerUITests.swift; sourceTree = "<group>"; };
 		A94F508C2B0E643F004AF181 /* dingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A92AA2D12B1387F00098F953 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A92AA2D22B1388590098F953 /* Theme.swift */,
+				A92AA2D42B13894E0098F953 /* DailyScrum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A94F50632B0E643D004AF181 = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +97,9 @@
 		A94F506D2B0E643D004AF181 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A94F506C2B0E643D004AF181 /* dinger.app */,
-				A94F507C2B0E643F004AF181 /* dingerTests.xctest */,
-				A94F50862B0E643F004AF181 /* dingerUITests.xctest */,
+				A94F506C2B0E643D004AF181 /* Scrumdinger.app */,
+				A94F507C2B0E643F004AF181 /* ScrumdingerTests.xctest */,
+				A94F50862B0E643F004AF181 /* ScrumdingerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 		A94F506E2B0E643D004AF181 /* dinger */ = {
 			isa = PBXGroup;
 			children = (
+				A92AA2D12B1387F00098F953 /* Models */,
 				A94F506F2B0E643D004AF181 /* dingerApp.swift */,
 				A94F50712B0E643D004AF181 /* MeetingView.swift */,
 				A94F50732B0E643E004AF181 /* Assets.xcassets */,
@@ -130,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A94F506B2B0E643D004AF181 /* dinger */ = {
+		A94F506B2B0E643D004AF181 /* Scrumdinger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A94F50902B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dinger" */;
+			buildConfigurationList = A94F50902B0E643F004AF181 /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
 			buildPhases = (
 				A94F50682B0E643D004AF181 /* Sources */,
 				A94F50692B0E643D004AF181 /* Frameworks */,
@@ -142,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = dinger;
+			name = Scrumdinger;
 			productName = dinger;
-			productReference = A94F506C2B0E643D004AF181 /* dinger.app */;
+			productReference = A94F506C2B0E643D004AF181 /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A94F507B2B0E643F004AF181 /* dingerTests */ = {
+		A94F507B2B0E643F004AF181 /* ScrumdingerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A94F50932B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dingerTests" */;
+			buildConfigurationList = A94F50932B0E643F004AF181 /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */;
 			buildPhases = (
 				A94F50782B0E643F004AF181 /* Sources */,
 				A94F50792B0E643F004AF181 /* Frameworks */,
@@ -160,14 +174,14 @@
 			dependencies = (
 				A94F507E2B0E643F004AF181 /* PBXTargetDependency */,
 			);
-			name = dingerTests;
+			name = ScrumdingerTests;
 			productName = dingerTests;
-			productReference = A94F507C2B0E643F004AF181 /* dingerTests.xctest */;
+			productReference = A94F507C2B0E643F004AF181 /* ScrumdingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A94F50852B0E643F004AF181 /* dingerUITests */ = {
+		A94F50852B0E643F004AF181 /* ScrumdingerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A94F50962B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dingerUITests" */;
+			buildConfigurationList = A94F50962B0E643F004AF181 /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */;
 			buildPhases = (
 				A94F50822B0E643F004AF181 /* Sources */,
 				A94F50832B0E643F004AF181 /* Frameworks */,
@@ -178,9 +192,9 @@
 			dependencies = (
 				A94F50882B0E643F004AF181 /* PBXTargetDependency */,
 			);
-			name = dingerUITests;
+			name = ScrumdingerUITests;
 			productName = dingerUITests;
-			productReference = A94F50862B0E643F004AF181 /* dingerUITests.xctest */;
+			productReference = A94F50862B0E643F004AF181 /* ScrumdingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A94F50672B0E643D004AF181 /* Build configuration list for PBXProject "dinger" */;
+			buildConfigurationList = A94F50672B0E643D004AF181 /* Build configuration list for PBXProject "Scrumdinger" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A94F506B2B0E643D004AF181 /* dinger */,
-				A94F507B2B0E643F004AF181 /* dingerTests */,
-				A94F50852B0E643F004AF181 /* dingerUITests */,
+				A94F506B2B0E643D004AF181 /* Scrumdinger */,
+				A94F507B2B0E643F004AF181 /* ScrumdingerTests */,
+				A94F50852B0E643F004AF181 /* ScrumdingerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92AA2D52B13894E0098F953 /* DailyScrum.swift in Sources */,
+				A92AA2D32B1388590098F953 /* Theme.swift in Sources */,
 				A94F50722B0E643D004AF181 /* MeetingView.swift in Sources */,
 				A94F50702B0E643D004AF181 /* dingerApp.swift in Sources */,
 			);
@@ -284,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		A94F507E2B0E643F004AF181 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A94F506B2B0E643D004AF181 /* dinger */;
+			target = A94F506B2B0E643D004AF181 /* Scrumdinger */;
 			targetProxy = A94F507D2B0E643F004AF181 /* PBXContainerItemProxy */;
 		};
 		A94F50882B0E643F004AF181 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A94F506B2B0E643D004AF181 /* dinger */;
+			target = A94F506B2B0E643D004AF181 /* Scrumdinger */;
 			targetProxy = A94F50872B0E643F004AF181 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +501,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dinger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumdinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumdinger";
 			};
 			name = Debug;
 		};
@@ -504,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dinger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumdinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumdinger";
 			};
 			name = Release;
 		};
@@ -545,7 +561,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A94F50672B0E643D004AF181 /* Build configuration list for PBXProject "dinger" */ = {
+		A94F50672B0E643D004AF181 /* Build configuration list for PBXProject "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A94F508E2B0E643F004AF181 /* Debug */,
@@ -554,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A94F50902B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dinger" */ = {
+		A94F50902B0E643F004AF181 /* Build configuration list for PBXNativeTarget "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A94F50912B0E643F004AF181 /* Debug */,
@@ -563,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A94F50932B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dingerTests" */ = {
+		A94F50932B0E643F004AF181 /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A94F50942B0E643F004AF181 /* Debug */,
@@ -572,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A94F50962B0E643F004AF181 /* Build configuration list for PBXNativeTarget "dingerUITests" */ = {
+		A94F50962B0E643F004AF181 /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A94F50972B0E643F004AF181 /* Debug */,
